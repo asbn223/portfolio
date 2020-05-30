@@ -1,0 +1,262 @@
+body{
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+
+//Button
+.btn{
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 4px solid #7f8fa6;
+    color: #fff;
+    z-index: 5;
+    position: absolute;
+    cursor: pointer;
+}
+
+.btn::before,
+.btn::after{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: #fff;
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+
+.btn::before{
+    top: -4px;
+    left: 10%;
+}
+
+.btn::after{
+    bottom: -4px;
+    right: 10%;
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+.btn:hover::before{
+    left: 80%;
+}
+.btn:hover::after{
+    right: 80%;
+}
+
+//Message
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.title-message{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -125px; 
+}
+
+.title-message .heading p{
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+.title-message .heading .main{
+    font-size: 50px;
+}
+
+.title-message .heading .sub{
+    font-size: 23px;
+}
+
+//Image Slider
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 6;
+  top: 46%;
+  width: 100%;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+}
+
+.slides-navigation a.prev,
+.slides-navigation a.next{
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev{
+    left: 20px;
+    background-image: url(../resources/back.png);
+}
+.slides-navigation a.next{
+    right: 20px;
+    background-image: url(../resources/next.png);
+}
+
+/*For typing text*/
+
+.title-message .heading p .typed-text {
+    color: #fff;
+}
+
+.title-message .heading p .cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+    49% {
+        background-color: #ccc;
+    }
+    50% {
+        background-color: transparent;
+    }
+    99% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #ccc;
+    }
+}
+
+//About Section
+.section{
+    padding: 100px 0;
+}
+
+.about-image{
+    max-width: 100%;
+}
+
+//Skills Section
+.skills-section{
+    background-color: #2f3542;
+    color: #fff;
+}
+
+.skill{
+    text-align: center;
+}
+
+.chart{
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.chart .percent{
+    color: #fff;
+    line-height: 152px;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.chart .percent::after{
+    content: '%';
+}
+
+//Contact Section
+.contact-section{
+    background-color: #ffc048;
+    color: #fff;
+}
+
+.email-button{
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+.email-button:hover{
+    text-decoration: none;
+    color: #e74c3c;
+    background-color: #fff;
+}
+
+//Copyright Section
+.copyright-section{
+    background-color: #596275;
+    color: #fff;
+    padding: 30px 5px;
+}
+
+.copyright-section p{
+    margin: 0;
+}
+
+//Navbar
+#navigation{
+    background-color: #2bcbba;
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li{
+    padding: 0 10px;
+}
+
+//Sticky Navbar
+.fixed-navbar #navigation{
+    position: fixed;
+    top: 0;
+}
+
+.selected{
+    border-bottom: 2px solid white;
+}
+
+//Loading Screen
+.loader{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.loader .inner{
+    width: 100%;
+    height: 100%;
+    background: url(../resources/load.gif) center center no-repeat;
+    
+}

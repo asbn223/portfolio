@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Sabin Portfolio</title>
+
+    <link rel="icon" href="resources/business.png" type="image/icon">
+
+
+    <!--Stylesheet Files-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/owl-carousel.css">
+
+    <link rel="stylesheet" href="css/superslides.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button class="btn" id="change-portfolio">Change Portfolio Style</button>
+    <div class="loader">
+        <div class="inner"></div>
+    </div>
+
+    <div id="slides">
+
+        <div class="overlay"></div>
+
+        <div class="slides-container">
+            <img src="resources/img1.jpg" alt="">
+            <img src="resources/img2.jpg" alt="">
+            <img src="resources/img3.jpg" alt="">
+            <img src="resources/img4.jpg" alt="">
+        </div>
+
+        <nav class="slides-navigation">
+            <a href="#" class="next"></a>
+            <a href="#" class="prev"></a>
+        </nav>
+
+        <div class="title-message">
+            <div class="heading">
+                <p class="main">Sabin Nakarmi</p>
+                <p class="sub">
+                    <span class="typed-text"></span>
+                    <span class="cursor typing">&nbsp;</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-light">
+        <a href="#slides" class="navbar-brand">Sabin Nakarmi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#about" class="nav-link AM">About Me</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link SK">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link CM">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="about" class="section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="resources/pp.jpg" alt="" class="about-image">
+                </div>
+                <div class="col-md-7">
+                    <h4>My Name is Sabin Nakarmi</h4>
+                    <p>Hello, I am Sabin Nakarmi from Kathmandu, Nepal. I am currently studying Bachelors (Hons) in Computing at Islington College. I have experience on Java, Python, HTML, CSS, Databases (SQL) etc. I have training experience in Machine Learning and Flutter as well.</p>
+                    <p>I am hardworking, quick learner and can work on pressured environment. I worked as Senior Customer Success Associate for 6 months and Customer Success Asscoiate for 1 years at Fusemachines before that I worked as Junior Pastry Chef at Hotel Yak and Yeti.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="skills" class="skills-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>TECHNICAL SKILLS</h2>
+                    <p>A representation of my proficiency in each skill.</p>
+                    <div class="owl-carousel owl-theme">
+                        <div class="skill">
+                            <span class="chart" data-percent="80">
+                                <span class="percent">80</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>Python</h4>
+                            <p>Logic has been built up with this.</p>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="55">
+                                <span class="percent">55</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>SQL|MySql</h4>
+                            <p>Logic has been built up with this.</p>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="67">
+                                <span class="percent">67</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>Java</h4>
+                            <p>Logic has been built up with this.</p>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="65">
+                                <span class="percent">65</span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+                            <h4>Web Design</h4>
+                            <p>Using HTML, CSS and JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact-section section">
+        <div class="col-md-12 text-center">
+            <p class="sub-heading">Get in Touch with me</p>
+            <h2>I'd love to hear from you.</h2>
+            <a href="mailto:asbn2231@gmail.com" class="email-button">EMAIL ME</a>
+        </div>
+    </div>
+
+    <div class="copyright-section section">
+        <div class="col-md-12 text-center">
+            <p>&copy; Copyright Sabin Nakarmi 2020</p>
+        </div>
+    </div>
+
+
+    <!--Script Files-->
+    <script src="js/destination.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
